@@ -9,10 +9,9 @@
 using namespace std;
 
 void test_a() {
-/*
+
 	FuelCar fc("ford", "fiesta", 30000, 60, 5);
 	ElectricCar ec("tesla", "s", 70000, 30, 10);
-
 	ASSERT_EQUAL("ford", fc.getBrand());
 	ASSERT_EQUAL("fiesta", fc.getModel());
 	ASSERT_EQUAL(30000, fc.getPrice());
@@ -24,11 +23,12 @@ void test_a() {
 	ASSERT_EQUAL(70000, ec.getPrice());
 	ASSERT_EQUAL(30, ec.getBattery());
 	ASSERT_EQUAL(10, ec.getKWh_100km());
-*/
+
 }
 
 void test_b() {
-/*
+
+
 	FuelCar fc1("ford", "fiesta");
 	FuelCar fc2("ford", "fiesta");
 	ElectricCar ec3("tesla", "s");
@@ -37,11 +37,11 @@ void test_b() {
 	ASSERT_EQUAL(fc1, fc2);
 	ASSERT_EQUAL(false, fc1 == ec3);
 	ASSERT_EQUAL(ec3, (FuelCar) hc4);
-*/
+
 }
 
 void test_c() {
-/*
+
 	FuelCar fc("ford", "fiesta");
 	fc.setTank(60);
 	fc.setL_100km(5);
@@ -57,11 +57,11 @@ void test_c() {
 	ASSERT_EQUAL(1200, fc.range());
 	ASSERT_EQUAL(300, ec.range());
 	ASSERT_EQUAL(1500, hc.range());
-*/
+
 }
 
 void test_d() {
-/*
+
 	FuelCar* fc1 = new FuelCar("ford", "fiesta");
 	FuelCar* fc2 = new FuelCar("ford", "fiesta");
 	ElectricCar* ec3 = new ElectricCar("tesla", "s");
@@ -73,11 +73,11 @@ void test_d() {
 	ASSERT_EQUAL(false, g.addVehicle(fc2));
 	ASSERT_EQUAL(true, g.addVehicle(ec3));
 	ASSERT_EQUAL(false, g.addVehicle(ec4));
-*/
+
 }
 
 void test_e() {
-/*
+
 	FuelCar* fc1 = new FuelCar("peugeot", "3008");
 	fc1->setPrice(30000);
 	fc1->setTank(60);
@@ -113,11 +113,11 @@ void test_e() {
 	ASSERT_EQUAL(70000, cars[3]->getPrice());
 	ASSERT_EQUAL("tesla", cars[2]->getBrand());
 	ASSERT_EQUAL(78000, cars[2]->getPrice());
-*/
+
 }
 
 void test_f() {
-/*
+
 	FuelCar* fc1 = new FuelCar("peugeot", "3008");
 	fc1->setPrice(30000);
 	fc1->setTank(60);
@@ -148,11 +148,11 @@ void test_f() {
     ASSERT_THROWS(g.removeVehicle("ford", "focus"), NoSuchVehicleException);
     ASSERT_EQUAL(ec4, g.removeVehicle("tesla", "m"));
     ASSERT_EQUAL(2, g.getVehicles().size());
-*/
+
 }
 
 void test_g() {
-/*
+
 	FuelCar* fc1 = new FuelCar("peugeot", "3008");
 	fc1->setPrice(30000);
 	fc1->setTank(60);
@@ -185,11 +185,11 @@ void test_g() {
 		ASSERT_EQUAL("ford", e.getBrand());
 	}
 	ASSERT_EQUAL(21000, g.avgPrice("peugeot"));
-*/
+
 }
 
 void test_h() {
-/*
+
 	FuelCar fc("toyota", "auris");
 	fc.setPrice(30000);
 	fc.setTank(60);
@@ -209,7 +209,7 @@ void test_h() {
 	stringstream ss3;
 	ss3 << (FuelCar) hc;
 	ASSERT_EQUAL("toyota prius (40000)", ss3.str());
-*/
+
 }
 
 
